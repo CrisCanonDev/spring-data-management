@@ -18,7 +18,7 @@ public class Editor {
     private long id;
     private String name;
 
-    @OneToMany(mappedBy = "Magazine", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "editor", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<Magazine> magazines = new ArrayList<>();
 
 }

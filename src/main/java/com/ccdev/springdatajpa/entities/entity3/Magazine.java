@@ -16,7 +16,7 @@ public class Magazine {
     private Long id;
     private String name;
 
-    @OneToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     @JoinColumn(name = "editor_id")
     private Editor editor;
 }
