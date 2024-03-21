@@ -19,13 +19,24 @@ public class testing1 implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         Address address  = new Address();
-        address.setCity("Bogota");
-        address.setStreet("Street 1");
+        address.setCity("Medellin");
+        address.setStreet("Street 2");
 
         Student student = new Student();
-        student.setName("David");
+        student.setName("Juan David prev");
         student.setAddress(address);
 
+        System.out.println("Prev student name: "+ student.getName());
         studentRepository.save(student);
+
+        student.setName("Samantha new");
+        studentRepository.save(student);
+
+        System.out.println("new student name: "+ student.getName() );
+
+        Iterable<Student> students = studentRepository.findAll();
+        for(Student s: students){
+            System.out.println(s.getId() + ". Name: " + s.getName() + ", Address: "+s.getAddress());
+        }
     }
 }
