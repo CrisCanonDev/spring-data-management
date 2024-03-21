@@ -16,7 +16,7 @@ public class Student {
 
     private String name;
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "address_id", referencedColumnName = "id")
     private Address address;
 }
