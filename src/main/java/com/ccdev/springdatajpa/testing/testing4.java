@@ -9,7 +9,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
-@Component
+//@Component
 public class testing4 implements CommandLineRunner {
     @Autowired
     private CarRepository carRepository;
