@@ -12,7 +12,7 @@ import java.util.Set;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Student {
+public class Student7 {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;

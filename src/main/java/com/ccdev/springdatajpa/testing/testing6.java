@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-@Component
+//@Component
 public class testing6 implements CommandLineRunner {
     @Autowired
     private AirlineRepository airlineRepository;
