@@ -9,8 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-@Component
-@Transactional
+//@Component
+//@Transactional
 public class testing5 implements CommandLineRunner {
     @Autowired
     private TeamRepository teamRepository;
